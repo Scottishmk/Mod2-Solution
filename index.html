@@ -7,21 +7,41 @@
 	<title>Mod2-Assignment</title>
 </head>
 <body>
+	<script id="__bs_script__">//<![CDATA[
+  (function() {
+    try {
+      var script = document.createElement('script');
+      if ('async') {
+        script.async = true;
+      }
+      script.src = 'http://HOST:3000/browser-sync/browser-sync-client.js?v=3.0.2'.replace("HOST", location.hostname);
+      if (document.body) {
+        document.body.appendChild(script);
+      } else if (document.head) {
+        document.head.appendChild(script);
+      }
+    } catch (e) {
+      console.error("Browsersync: could not append script tag", e);
+    }
+  })()
+//]]></script>
+
+
 	<h1>SCOTTISH REPONSIVE WEB LAYOUT</h1>
 
-	<div class="row">
+	
 		<div class="col-lg-3 col-md-6 col-sm-12">
-			<section>Chicken</section>
+			<section id="p1">Chicken</section>
 			<p>Your site is very simple. It consists of a page heading and 3 sections (all in one row in the desktop view). Each section contains some text. You can make it dummy text/"lorem ipsum", it doesn't matter. How the sections are laid out on the screen depends on the width of the browser window. (Hint: use media queries discussed in Lecture 23.)</p>
 		</div>
 
 		<div class="col-lg-3 col-md-6 col-sm-12">
-			<section>Beef</section>
+			<section id="p2">Beef</section>
 			<p>Your site is very simple. It consists of a page heading and 3 sections (all in one row in the desktop view). Each section contains some text. You can make it dummy text/"lorem ipsum", it doesn't matter. How the sections are laid out on the screen depends on the width of the browser window. (Hint: use media queries discussed in Lecture 23.)</p>
 		</div>
 		
 		<div class="col-lg-3 col-md-6 col-sm-12">
-			<section>Sushi</section>
+			<section id="p3">Sushi</section>
 			<p>Your site is very simple. It consists of a page heading and 3 sections (all in one row in the desktop view). Each section contains some text. You can make it dummy text/"lorem ipsum", it doesn't matter. How the sections are laid out on the screen depends on the width of the browser window. (Hint: use media queries discussed in Lecture 23.)</p>
 		</div>
 	
